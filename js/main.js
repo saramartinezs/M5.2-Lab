@@ -16,6 +16,20 @@ showHideBtn.onclick = function() {
   }
 };
 
+// Control transcript display
+
+const transcript = document.querySelector('.transcript');
+const transcriptBtn = document.querySelector('.transcript-container button');
+
+transcriptBtn.onclick = function() {
+  if(transcriptBtn.textContent === 'Show transcript') {
+    transcript.style.height = '150px';
+    transcriptBtn.textContent = 'Hide transcript';
+  } else {
+    transcript.style.height = '0';
+    transcriptBtn.textContent = 'Show transcript';
+  }
+};
 // functionality for adding a new comment via the comments form
 
 const form = document.querySelector('.comment-form');
